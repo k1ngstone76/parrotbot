@@ -10,7 +10,7 @@ bot = telebot.TeleBot(Token)
 @bot.message_handler(content_types=['text'])
 def lalal(message):
     str(message.text)
-    message.text2 = message.text[::-1] + '1'
+    message.text2 = message.text[::-1] + '2'
     bot.send_message(message.chat.id, message.text2)
 
 
